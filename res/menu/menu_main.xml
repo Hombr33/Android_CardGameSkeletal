@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.d1996e.tabs.MainActivity">
+
+    <item
+        android:id="@+id/deckeditor_button"
+        android:enabled="true"
+        android:title="Deck Editor" />
+    <item
+        android:id="@+id/exit_button"
+        android:checkable="false"
+        android:title="Exit" />
+</menu>

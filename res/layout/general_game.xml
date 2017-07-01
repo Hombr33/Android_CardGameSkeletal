@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/generalgame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/endturn_button"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="110dp"
+        android:text="End Turn" />
+
+    <Button
+        android:id="@+id/drawcard_button"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/me_battlezone"
+        android:layout_toEndOf="@+id/endturn_button"
+        android:text="Draw Card" />
+
+    <Button
+        android:id="@+id/customdeck_button"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/me_battlezone"
+        android:layout_toStartOf="@+id/endgame_button"
+        android:text="Load Deck" />
+
+    <LinearLayout
+        android:id="@+id/me_hand"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/drawcard_button"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/opponent_hand"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/me_battlezone"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/endturn_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="14dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/opponent_battlezone"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/me_battlezone"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"></LinearLayout>
+
+    <Button
+        android:id="@+id/endgame_button"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:text="End Game"
+        android:layout_below="@+id/me_battlezone"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
